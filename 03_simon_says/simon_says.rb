@@ -1,31 +1,33 @@
 def echo (word)
-word
+  word
 end
 
 def shout (word)
-word.upcase
+  word.upcase
 end
 
 def repeat (word, times=2)
-return ([word]*times).join(" ")
+  ([word]*times).join(" ")
 end
 
 def start_of_word(word,n)
-word[0...n]
+  word[0...n]
 end
 
 def first_word(word)
-word.split(" ").first
+  word.split(" ").first
 end
 
 def titleize(s)
-words = s.split.map do |word|
-  if %w(the and over).include?(word)
-  word
-  else
-  word.capitalize
+  words = s.split.map do |word|
+    if %w(the and over).include?(word)
+    word
+    else
+    word.capitalize
+    end
   end
-  end
+  
 words.first.capitalize!
 words.join(" ")
+
 end
