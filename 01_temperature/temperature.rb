@@ -1,5 +1,5 @@
 def ftoc(farengeit)
-  (farengeit-32.0) * (5.0/9.0)
+  (5.0/9.0) * (farengeit-32.0)
 end
 
 def ctof(celsium)
