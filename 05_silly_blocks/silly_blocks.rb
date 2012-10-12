@@ -1,5 +1,5 @@
 def reverser
-yield.split(' ').map(&:reverse).join(' ')
+  yield.split(' ').map(&:reverse).join(' ')
 end
 
 def adder digit = 1
