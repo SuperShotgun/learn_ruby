@@ -1,3 +1,5 @@
 class Friend
- who ? "Hello, #{who}!" : "Hello!"
+  def greeting(who = nil)
+    who == nil ? "Hello!" : "Hello, #{who}!"
+  end
 end
