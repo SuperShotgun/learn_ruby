@@ -9,7 +9,7 @@ class Temperature
   end
 
   def initialize options
-    @degrees_fahrenheit = options[:f] || options[:c] * (9.0/5.0) + 32
+    @degrees_fahrenheit = options[:f] || options[:c] * (9.0 / 5) + 32
   end
 
   def in_fahrenheit
@@ -17,15 +17,15 @@ class Temperature
   end
 
   def in_celsius
-    (@degrees_fahrenheit - 32) * (5.0/9.0)
+    (@degrees_fahrenheit - 32) * (5 / 9.0)
   end
 
   def ftoc(f)
-    (f-32) * (5.0/9.0)
+    (f-32) * (5 / 9.0)
   end
 
   def ctof(c)
-    c * (9.0/5.0) + 32
+    c * (9.0 / 5) + 32
   end
 end
 
