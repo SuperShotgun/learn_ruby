@@ -19,12 +19,8 @@ def first_word(word)
 end
 
 def titleize(s)
-  words = s.split.map do |word|
-    if %w(the and over).include?(word)
-      word
-      else
-      word.capitalize
-    end
+  words = s.split.map do |word| 
+  %w(the and over).include?(word)? word : word.capitalize
 end
   
 words.first.capitalize!
