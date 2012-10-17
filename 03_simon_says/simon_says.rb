@@ -1,16 +1,16 @@
-def echo (word)
+def echo(word)
   word
 end
 
-def shout (word)
+def shout(word)
   word.upcase
 end
 
-def repeat (word, times=2)
-  ([word]*times).join(" ")
+def repeat(word, times = 2)
+  ([word] * times).join(" ")
 end
 
-def start_of_word(word,n)
+def start_of_word(word, n)
   word[0...n]
 end
 
@@ -25,7 +25,7 @@ def titleize(s)
     else
     word.capitalize
     end
-  end
+end
   
 words.first.capitalize!
 words.join(" ")
