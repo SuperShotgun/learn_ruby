@@ -15,15 +15,15 @@ def start_of_word(word, n)
 end
 
 def first_word(word)
-  word.split(" ").first
+  word.split.first
 end
 
 def titleize(s)
   words = s.split.map do |word|
     if %w(the and over).include?(word)
-    word
-    else
-    word.capitalize
+      word
+      else
+      word.capitalize
     end
 end
   
