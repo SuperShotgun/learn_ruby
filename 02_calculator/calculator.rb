@@ -12,7 +12,7 @@ def sum(arr)
 end
 
 def power(a, b)
-  a ** b
+  a**b
 end  
 
 def multiply(a, c, d)
@@ -20,5 +20,5 @@ def multiply(a, c, d)
 end  
 
 def factorial(n)
-  (1..n).inject(:*)
+  n == 0 ? 1 : (1..n).inject(:*)
 end
