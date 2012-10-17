@@ -3,6 +3,6 @@ def ftoc(farengeit)
 end
 
 def ctof(celsium)
-  celsium * (9.0 / 5.0) + 32
+  celsium * (9 / 5.0) + 32
 end
 
