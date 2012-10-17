@@ -21,7 +21,7 @@ class Temperature
   end
 
   def ftoc(f)
-    (f-32) * (5 / 9.0)
+    (f - 32) * (5 / 9.0)
   end
 
   def ctof(c)
