@@ -71,6 +71,12 @@ describe "sum" do
   it "computes the sum of an array of many numbers" do
     sum([1,3,5,7,9]).should == 25
   end
+  
+  it "computes factorial" do
+    factorial(1).should == 1 
+    factorial(0).should == 1
+  end 
+  
 end
 
 
