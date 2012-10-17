@@ -8,7 +8,7 @@ end
 
 
 def sum(arr)
-  arr.inject(0){ |result, elem| result = result + elem }
+  arr.inject(0, :+) 
 end
 
 def power(a, b)
