@@ -15,8 +15,8 @@ def power(a, b)
   a**b
 end  
 
-def multiply(a, c, d)
-  a * c * d
+def multiply(num)
+  num.inject(:*)
 end  
 
 def factorial(n)

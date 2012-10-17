@@ -71,13 +71,35 @@ describe "sum" do
   it "computes the sum of an array of many numbers" do
     sum([1,3,5,7,9]).should == 25
   end
-  
+end
+
+describe "power" do
+  it "powers one num to another" do
+    power(3, 2).should == 9
+  end
+end
+
+describe "multiply" do
+  it "multiplies two or seweral numbers" do
+    multiply([1, 2]).should == 2
+    multiply([1, 2, 2]).should == 4
+  end
+end 
+
+
+
+
+describe "factorial" do
   it "computes factorial" do
     factorial(1).should == 1 
     factorial(0).should == 1
   end 
-  
 end
+
+
+
+
+
 
 
 
