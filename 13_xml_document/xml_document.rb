@@ -1,4 +1,5 @@
 class XmlDocument
+
   def initialize(indent = false)
     @indent = indent
     @indent_level = 0
@@ -12,12 +13,13 @@ class XmlDocument
     attributes.each_pair do |key, value|
       s << " #{key}='#{value}'"
     end
+
     if block
       s << ">"
       s << "\n" if @indent
-      @indent_level += 1
+      @indent_level += 2
       s << yield
-      @indent_level -= 1
+      @indent_level -= 2
       s << (" " * @indent_level) if @indent
       s << "</#{method_name}>"
       s << "\n" if @indent
@@ -29,5 +31,3 @@ class XmlDocument
     s
   end
 end
-
-
