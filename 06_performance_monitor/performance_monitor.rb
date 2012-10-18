@@ -6,5 +6,5 @@ def measure count = 1
     endtime = Time.now
     time += endtime - start
   end
-time / count
+  time / count
 end
