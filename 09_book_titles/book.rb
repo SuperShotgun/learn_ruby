@@ -1,5 +1,5 @@
 class Book
-  attr_accessor :title
+  attr_reader :title
 
   def title=(book_title)
     @parts = book_title.split
